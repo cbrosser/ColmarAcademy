@@ -1,0 +1,93 @@
+html {
+  font-size: 16px;
+  color: #444;
+}
+.button {
+  color: white;
+  background-color: #444;
+}
+img {
+  max-width: 100%;
+}
+.banner,
+.main,
+.info,
+.courses,
+.thesis,
+.grid,
+.exhibit,
+.right .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main,
+.courses,
+.thesis {
+  flex-direction: column;
+}
+.right .item {
+  width: 423px;
+}
+.right .item img {
+  width: 35%;
+  height: 35%;
+  margin: 1rem;
+}
+.right .item:nth-child(1n+2){
+  border-top: 1px solid #DDD;
+}
+
+/* Header section */
+
+header {
+  height: 4rem;
+}
+
+/* Main banner section */
+
+.banner {
+  background-color: #DDD;
+}
+.banner img {
+  width: 60%;
+  margin: 2rem 2.5rem 2rem 1.5rem;
+}
+
+/* Information section */
+
+.info .left {
+  padding: 2rem 1.5rem;
+  border-right: 1px solid #DDD;
+}
+
+/* Course grid */
+.courses {
+  background-color: #EEE;
+}
+.grid {
+  align-items:
+}
+.grid .item {
+  background-color: white;
+  margin: 1rem;
+}
+.grid .item h3,
+.grid .item p {
+  margin: 1rem;
+}
+
+/* Thesis exhibit section */
+
+.exhibit .left {
+  padding: 2rem 1rem 1.5rem 1.5rem;
+}
+video {
+  width: 100%;
+}
+
+/* Footer section */
+
+footer {
+
+}
