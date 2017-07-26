@@ -44,7 +44,6 @@ h2 {
   margin-top: 2rem;
 }
 h3 {
-  font-size: 1rem;
   font-weight: 500;
 }
 h4 {
@@ -135,6 +134,34 @@ header {
 .button:hover {
   background-color: #888;
 }
+@media only screen and (max-width: 480px) {
+  .banner,
+  .button {
+    background-color: #888;
+  }
+  .banner img {
+    display: none;
+  }
+  .main {
+    width: 100%;
+    padding: 2rem 1rem;
+    margin-top: 11.25rem;
+    background-color: #DDD;
+  }
+  .main h1 {
+    margin: 0;
+  }
+  .main h3 {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  .button {
+    margin: 0;
+  }
+  .button:hover {
+    background-color: #444;
+  }
+}
 
 /* Information section styles */
 
@@ -148,6 +175,29 @@ header {
 .info .right {
   padding: 1rem 0;
 }
+@media only screen and (max-width: 480px) {
+  .info .left {
+    display: none;
+  }
+  .info .right {
+    padding: 0 1rem 2rem 1rem;
+    border-bottom: 1px solid #DDD;
+  }
+  .info .right .item {
+    width: 100%;
+    border: none;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .info .right .item img {
+    width: 100%;
+    height: 35%;
+    margin: 1rem 0;
+  }
+  .info .right .item div {
+    margin: 0 2rem 0.5rem 2rem;
+  }
+}
 
 /* Course grid styles */
 
@@ -159,14 +209,15 @@ header {
   margin-bottom: 1.5rem;
 }
 .grid .item {
-  width: 13.75rem;
   background-color: white;
+  width: 14.75rem;
   margin: 0.5rem 1rem;
   padding-bottom: 1.25rem;
 }
 .grid .item h3,
 .grid .item p {
   margin-left: 1rem;
+  margin-right: 1rem;
 }
 .grid .item h3 {
   margin-top: 1rem;
@@ -174,18 +225,60 @@ header {
 .grid .item p {
   margin-top: 0.25rem;
 }
+@media only screen and (max-width: 480px) {
+  .courses {
+    background-color: white;
+    margin: 0 1rem;
+    padding-bottom: 1.75rem;
+    border-bottom: 1px solid #DDD;
+  }
+  .courses h2 {
+    margin-bottom: 0.75rem;
+  }
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+  .grid .item {
+    width: 100%;
+    height: auto;
+    margin: 0.25rem 0;
+    padding: 0;
+    background-color: #DDD;
+  }
+  .grid .item img,
+  .grid .item p {
+    display: none;
+  }
+  .grid .item h3 {
+    margin: 1rem;
+  }
+}
 
 /* Thesis exhibit section styles */
 
 .thesis h2 {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 .exhibit .left {
-  padding: 1rem 1rem 2rem 1.5rem;
+  padding: 0 1rem 2rem 1.5rem;
 }
 video {
   width: 100%;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.exhibit .left h3 {
+  margin-top: 0;
+}
+@media only screen and (max-width: 480px) {
+  .exhibit .left h3,
+  .exhibit .left p,
+  .exhibit .right {
+    display: none;
+  }
+  .exhibit .left {
+    padding: 0;
+  }
 }
 
 /* Footer section styles */
