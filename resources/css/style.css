@@ -41,11 +41,11 @@ a {
   color: #48F;
 }
 h2 {
-  margin: 2rem 0;
+  margin-top: 2rem;
 }
 h3 {
+  font-size: 1rem;
   font-weight: 500;
-  margin: 0;
 }
 h4 {
   font-weight: 400;
@@ -86,6 +86,9 @@ img {
 .right .item img {
   width: 35%;
   margin: 1rem;
+}
+.right .item h3 {
+  margin: 0;
 }
 .right .item p {
   margin: 0.5rem 0;
@@ -140,26 +143,36 @@ header {
   border-right: 1px solid #DDD;
 }
 .info .left h2 {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.75rem;
 }
 .info .right {
   padding: 1rem 0;
 }
 
 /* Course grid styles */
+
 .courses {
   background-color: #EEE;
+  padding-bottom: 1.5rem;
 }
-.grid {
-  align-items:
+.courses h2 {
+  margin-bottom: 1.5rem;
 }
 .grid .item {
+  width: 13.75rem;
   background-color: white;
-  margin: 1rem;
+  margin: 0.5rem 1rem;
+  padding-bottom: 1.25rem;
 }
 .grid .item h3,
 .grid .item p {
-  margin: 1rem;
+  margin-left: 1rem;
+}
+.grid .item h3 {
+  margin-top: 1rem;
+}
+.grid .item p {
+  margin-top: 0.25rem;
 }
 
 /* Thesis exhibit section styles */
@@ -172,7 +185,7 @@ header {
 }
 video {
   width: 100%;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 /* Footer section styles */
