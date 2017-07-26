@@ -26,10 +26,16 @@
   src: local('Montserrat ExtraBold'), local('Montserrat-ExtraBold'), url(https://fonts.gstatic.com/s/montserrat/v10/H8_7oktkjVeeX06kbAvc0Ary2jK1Y0oNyoF1xLf3zMQ.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
+
+/* Universal styles */
+
 html {
   font-size: 16px;
   font-family: 'Montserrat', sans-serif;
   color: #444;
+}
+p {
+  color: #888;
 }
 h3 {
   font-weight: 500;
@@ -37,9 +43,6 @@ h3 {
 h4 {
   font-size: 0.9rem;
   font-weight: 400;
-}
-p {
-  color: #888;
 }
 a {
   color: #48F;
@@ -91,11 +94,21 @@ header {
   width: 60%;
   margin: 2rem 2.5rem 2rem 1.5rem;
 }
+.main {
+  width: 17.5rem;
+}
 .button {
+  width: 100%;
   background-color: #444;
+  transition: 0.1s ease-in-out;
 }
 .button p {
   color: white;
+  margin: 0.5rem;
+  text-align: center;
+}
+.button:hover {
+  background-color: #888;
 }
 
 /* Information section */
