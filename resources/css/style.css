@@ -293,4 +293,27 @@ video {
 
 footer {
   border-top: 1px solid #DDD;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+footer ul {
+  margin-top: 0;
+}
+footer li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 1rem;
+}
+@media only screen and (max-width: 600px) {
+  footer {
+    padding-top: 1.5rem;
+  }
+  footer div {
+    margin: 1rem;
+  }
+  footer nav {
+    display: none;
+  }
 }
